@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pelamar Kerja</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2f96a6;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #cd3882;
+            color: white;
+            padding: 20px;
+            border-radius: 0 0 20px 20px;
+        }
+        img {
+            border-radius: 100%;
+            margin-top: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #8bd8e3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #0a3637;
+            padding: 30px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #d83478;
+            color: white;
+            border-radius: 20px 20px 0 0;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Olivia Alinda Putri</h1>
+        <img 
+            src="https://i.pinimg.com/736x/8d/3c/96/8d3c96dabd4ff064dddbb35f6e3cd624.jpg" 
+            alt="foto profil"
+            width="150"
+        />
+        <p>Jember, 30 Januari 2005</p>
+        <hr />
+    </header>
+    <main>
+        <p>
+            Saya adalah mahasiswa di Universitas Jember Fakultas Ilmu Komputer.
+            Saat ini saya menempuh semester 4. Selain menjadi mahasiswa, saya aktif di organisasi mahasiswa.
+            Hobi saya adalah menonton drama Korea, fangirling The Boyz, dan membaca novel fiksi maupun non-fiksi.
+        </p>
+        <h4>Pendidikan</h4>
+        <ul>
+            <li>SD Sumbersari 01 Jember</li>
+            <li>SMP 12 Jember</li>
+            <li>SMK 1 Jember</li>
+            <li>Universitas Jember</li>
+        </ul>
+        <h4>Keahlian</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill Coding</th>
+                    <th>MS Office</th>
+                    <th>Desain Grafis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>MS Word</li>
+                            <li>MS PowerPoint</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Canva</li>
+                            <li>Corel</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <form>
+            <div>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" />
+            </div>
+            <div>
+                <label for="ajakan">Ditujukan Untuk</label>
+                <textarea name="ajakan" id="ajakan">PT The Boyz</textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+    <script>
+        document.getElementById("nama").addEventListener("input", function() {
+            console.log("Nama diinput: ", this.value);
+        });
+    </script>
+</body>
+</html>
